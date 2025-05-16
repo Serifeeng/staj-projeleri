@@ -1,0 +1,161 @@
+body{
+    background-image: url(image2.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:aliceblue;
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container{
+    width: 100%;
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    
+}
+.guess{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    flex-direction: column;
+    margin-top: 50px;
+    padding-left: 60px;
+}
+.forecast-container{
+    padding: 10px;
+    width: 400px;
+    height: 500px;
+    background-color: rgba(0, 0,0, 0.800);
+    border-radius: 10px;
+    color: aliceblue;
+    
+}
+.search-container{
+    padding:10px;
+    margin:5px ;
+    width: 400px;
+    /* height: 400px; */
+    background-color: rgba(0, 0,0, 0.800);
+    border-radius: 10px;
+    color: aliceblue;
+}
+.clouds{
+    display: flex;
+    align-items: center;
+
+}
+.day1,.day2,.day3,.day4,.day5{
+    display: flex;
+    justify-content:space-between;
+    text-align: center;
+    gap: 40px;
+}
+p{
+    justify-content:space-between;
+}
+ .search-box{
+    display: flex;
+    margin: 30px;
+    text-align: center;
+    gap:15px;
+ }
+ *{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+ }
+ .cityName,.temperature,.details{
+    text-align: left;
+    padding-bottom: 30px;
+    margin-left: 10px;
+ }
+.input-box{
+    background-color:rgb(36, 34, 34);
+    color: aliceblue;
+    border: none;
+    width: 220px;
+    height:35px;
+    border-radius: 90px;
+    text-align: center;
+
+}
+#btn{
+    background-color:rgb(36, 34, 34);
+    color: aliceblue;
+    border: none;
+    height:35px;
+    width: 40px;
+    border-radius: 90px;
+    cursor: pointer;
+}
+#btn:active{
+    background-color: rgb(19, 17, 17);
+}
+.clouds,.nem,.hiz,.tarih{
+    padding-bottom:8px;
+    
+}
+.days h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    
+}
+.a{
+    align-items: center;
+}
+.days{
+    margin:20px;
+    text-align: center;
+}
+
+.day1 div,.day2 div,.day3 div,.day4 div,.day5 div{
+    display: flex;
+  align-items: center;
+  padding: 10px;
+ 
+}
+.c{
+    width: 30px;
+}
+
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .search-box {
+        flex-direction: column;
+    }
+
+    .input-box {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #btn {
+        width: 100%;
+    }
+
+    .guess .day1, .guess .day2, .guess .day3, .guess .day4, .guess .day5 {
+        flex: none;
+        width: 100%;
+    }
+}

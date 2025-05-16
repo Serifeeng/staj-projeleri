@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <link rel="stylesheet" type="text/css" href="weather-css.css">
+   
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+    
+      <div class="container">
+        <div class="search-container">
+          <div class="search-box">
+            <input type="text" placeholder="Search the city name" class="input-box"/>
+            <button id="btn" class="bx bx-search"></button>
+          </div>
+          <div class="city">
+            <h2 class="cityName">Current Weather in Paris</h2>
+          </div>
+          <div class="temperature"><h1 class="derece">18.1°C</h1></div>
+          <div class="details">
+            <div class="clouds">
+              <img class="bulut" src="http://openweathermap.org/img/wn/04d.png" alt="Broken Clouds">
+              <p class="bulutAd">Broken Clouds</p>
+            </div>
+            <p class="nem">Humidity : 40%</p>
+            <p class="hiz" >Wind speed : 1.42 km/h</p>
+            <p class="tarih">Monday, May 30, 2022</p>
+            
+          </div>
+        </div>
+        <div class="forecast-container">
+          <div class="days">
+            <h2>5 Days Weather Forecast</h2>
+          </div>
+          <div class="guess">
+              <div class="day1" >
+                <div><p class="a">Mon</p></div>
+                <div><p class="b">18.1°C</p></div>
+                <div><img class="c" src="http://openweathermap.org/img/wn/02d.png" alt="Few Clouds"/></div>
+                <div>
+                  <p class="d">few clouds</p>
+                </div>   
+              </div>
+              <div class="day2">
+                <div><p class="a">Tue</p></div>
+                <div><p class="b">18.4°C</p></div>
+                <div>
+                  <img  class="c"src="http://openweathermap.org/img/wn/04d.png" alt="overcast clouds"/>
+                </div>
+                <div>
+                  <p class="d">overcast clouds</p>
+                </div>
+              </div>
+              <div class="day3">
+                <div><p class="a">Wed</p></div>
+                <div><p class="b">19.9°C</p></div>
+                <div><img class="c" src="http://openweathermap.org/img/wn/01d.png" alt="clear sky"/></div>
+                <div> 
+                  <p class="d">clear sky</p>
+                </div>
+              </div>
+              <div class="day4">
+                <div><p class="a">Thu</p></div>
+                <div><p class="b" >23.7°C</p></div>
+                <div><img class="c"src="http://openweathermap.org/img/wn/04d.png" alt="Overcast Clouds"/></div>
+                <div>
+                  
+                  <p class="d">overcast clouds</p>
+                </div>
+              </div>
+              <div class="day5">
+                <div><p class="a">Fri</p></div>
+                <div><p class="b">22.1°C</p></div>
+                <div><img class="c" src="http://openweathermap.org/img/wn/04d.png" alt=" Broken Clouds"/></div>
+                <div>
+                  <p class="d"> broken clouds</p>
+                </div>   
+              </div>
+          </div>
+        </div>
+      </div>
+       <script src="weather-js.js"></script> 
+  </body>
+</html>
